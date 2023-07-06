@@ -43,7 +43,7 @@ Upon running the script, the results will be logged to [wandb](https://wandb.ai/
 |          	| Augmix   	| ResNet-50        	| 77.34     	| 49.33     	| 0.438     	| 0.243  	|
 |          	| Deit-B   	| DeiT Base        	| **81.38** 	| **67.55** 	| **6.748** 	| 0.221  	|
 
-Accuracy ($\%$) on the clean uncorrupted dataset (clean), common corruptions dataset (CC), and accuracy after our attack (MUFIA) for standard and robust models on different datasets. Our attack algorithm, MUFIA, exposes previously unseen corruptions that greatly impact the accuracy of almost all the models. Notably, while these models perform well on the common corruption dataset (CC accuracy column), they struggle when confronted with new corruptions introduced by MUFIA. Further, our attack achieves this while generating adversarial images that maintain a high degree of semantic similarity, as indicated by the LPIPS values.
+Accuracy(%) on the clean uncorrupted dataset (Clean), common corruptions dataset (CC), and accuracy after our attack (MUFIA) for standard and robust models on different datasets. Our attack algorithm, MUFIA, exposes previously unseen corruptions that greatly impact the accuracy of almost all the models. Notably, while these models perform well on the common corruption dataset (CC accuracy column), they struggle when confronted with new corruptions introduced by MUFIA. Further, our attack achieves this while generating adversarial images that maintain a high degree of semantic similarity, as indicated by the LPIPS values.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
