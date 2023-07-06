@@ -11,6 +11,7 @@ Deep learning models often face challenges when handling real-world image corrup
 This code has been tested with `Python 3.8.10` and `PyTorch 2.0.0+cu117`. To install required dependencies run:
 
 ```sh
+cd misc
 pip install -r requirements.txt
 ```
 
