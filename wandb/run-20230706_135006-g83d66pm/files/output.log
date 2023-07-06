@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "test.py", line 127, in <module>
+    data_loading = DataLoading(params=param)
+  File "/home/machiraj/mufia_git/data/data.py", line 26, in __init__
+    self.shuffle = params["shuffle"]
+KeyError: 'shuffle'

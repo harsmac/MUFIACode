@@ -15,7 +15,7 @@ class FilterAttack:
     def __init__(self, net, params, device="cuda"):
         super(FilterAttack, self).__init__()
         self.print_every = params["print_every"]
-        self.lambda_mse = params["lambda_mse"]
+        self.lambda_reg = params["lambda_reg"]
         self.kappa = params["kappa"]
         self.device = device
 
@@ -111,7 +111,7 @@ class FilterAttack:
         # increase the cosine similarity between dct
         energy_loss = self.similarity_loss(y_orig_dct, new_y_dct)
 
-        loss = ce_loss + self.lambda_mse * energy_loss
+        loss = ce_loss + self.lambda_reg * energy_loss
 
         # loss = loss.mean()
         loss.backward()
@@ -142,7 +142,7 @@ class FilterAttackCE:
     def __init__(self, net, params, device="cuda"):
         super(FilterAttackCE, self).__init__()
         self.print_every = params["print_every"]
-        self.lambda_mse = params["lambda_mse"]
+        self.lambda_reg = params["lambda_reg"]
         self.kappa = params["kappa"]
         self.device = device
 
@@ -238,7 +238,7 @@ class FilterAttackCE:
         # increase the cosine similarity between dct
         energy_loss = self.similarity_loss(y_orig_dct, new_y_dct)
 
-        loss = ce_loss + self.lambda_mse * energy_loss
+        loss = ce_loss + self.lambda_reg * energy_loss
 
         # loss = loss.mean()
         loss.backward()

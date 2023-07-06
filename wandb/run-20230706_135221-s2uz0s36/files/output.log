@@ -1,0 +1,130 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Loading data from CIFAR10
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torch/hub.py:286: UserWarning: You are about to download and run code from an untrusted repository. In a future release, this won't be allowed. To add the repository to your trusted list, change the command to {calling_fn}(..., trust_repo=False) and a command prompt will appear asking for an explicit confirmation of trust, or load(..., trust_repo=True), which will assume that the prompt is to be answered with 'yes'. You can also use load(..., trust_repo='check') which will only prompt for confirmation if the repo is not already trusted. This will eventually be the default behaviour
+  warnings.warn(
+Downloading: "https://github.com/chenyaofo/pytorch-cifar-models/zipball/master" to /SCRATCH2/machiraj/datasets/cifar10/master.zip
+Downloading: "https://github.com/chenyaofo/pytorch-cifar-models/releases/download/resnet/cifar10_resnet56-187c023a.pt" to /SCRATCH2/machiraj/datasets/cifar10/checkpoints/cifar10_resnet56-187c023a.pt
+  0%|                                                                                                                                                                    | 0.00/3.39M [00:00<?, ?B/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3.39M/3.39M [00:00<00:00, 41.2MB/s]
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/vgg16-397923af.pth" to /SCRATCH2/machiraj/datasets/cifar10/checkpoints/vgg16-397923af.pth
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 528M/528M [00:19<00:00, 27.7MB/s]
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchmetrics/utilities/prints.py:36: UserWarning: The `reduction=sum` will not have any effect when `dim` is None.
+  warnings.warn(*args, **kwargs)
+0
+
+  3%|████▊                                                                                                                                                           | 3/100 [00:02<00:52,  1.84it/s]
+{'net_loss': 1.8761638402938843, 'epoch': 0, 'misclassify loss': 1.876163363456726, 'energy loss': 2.2351741790771484e-08}
+
+ 19%|██████████████████████████████▏                                                                                                                                | 19/100 [00:04<00:10,  8.04it/s]
+{'net_loss': 0.5588217973709106, 'epoch': 20, 'misclassify loss': 0.4012368321418762, 'energy loss': 0.007879247888922691}
+
+ 36%|█████████████████████████████████████████████████████████▏                                                                                                     | 36/100 [00:06<00:07,  8.05it/s]
+
+ 52%|██████████████████████████████████████████████████████████████████████████████████▋                                                                            | 52/100 [00:08<00:05,  8.15it/s]
+{'net_loss': 0.16166210174560547, 'epoch': 50, 'misclassify loss': 0.06325709819793701, 'energy loss': 0.004920249804854393}
+
+ 69%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                 | 69/100 [00:10<00:03,  8.07it/s]
+
+ 85%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                       | 85/100 [00:12<00:01,  8.19it/s]
+{'net_loss': 0.11800900101661682, 'epoch': 80, 'misclassify loss': 0.05475252866744995, 'energy loss': 0.0031628236174583435}
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:14<00:00,  7.01it/s]
+{'net_loss': 0.12108433991670609, 'epoch': 99, 'misclassify loss': 0.06397008895874023, 'energy loss': 0.0028557125478982925}
+1
+{'net_loss': 1.7998656034469604, 'epoch': 0, 'misclassify loss': 1.79986572265625, 'energy loss': -5.587935447692871e-09}
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+  6%|█████████▌                                                                                                                                                      | 6/100 [00:00<00:11,  8.28it/s]
+
+ 22%|██████████████████████████████████▉                                                                                                                            | 22/100 [00:02<00:09,  8.41it/s]
+{'net_loss': 0.587659478187561, 'epoch': 20, 'misclassify loss': 0.43435609340667725, 'energy loss': 0.007665170356631279}
+
+ 39%|██████████████████████████████████████████████████████████████                                                                                                 | 39/100 [00:04<00:07,  8.52it/s]
+{'net_loss': 0.2531730532646179, 'epoch': 40, 'misclassify loss': 0.1275017261505127, 'energy loss': 0.006283566355705261}
+
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████                                                                      | 56/100 [00:06<00:05,  8.18it/s]
+
+ 72%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                            | 72/100 [00:08<00:03,  7.91it/s]
+{'net_loss': 0.15478664636611938, 'epoch': 70, 'misclassify loss': 0.08005213737487793, 'energy loss': 0.003736725077033043}
+
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                 | 89/100 [00:10<00:01,  8.17it/s]
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:12<00:00,  8.16it/s]
+{'net_loss': 0.14328864216804504, 'epoch': 99, 'misclassify loss': 0.07998448610305786, 'energy loss': 0.003165207803249359}
+  0%|                                                                                                                                                                        | 0/100 [00:00<?, ?it/s]
+2
+
+ 16%|█████████████████████████▍                                                                                                                                     | 16/100 [00:01<00:10,  8.07it/s]
+{'net_loss': 0.8993510603904724, 'epoch': 10, 'misclassify loss': 0.7485227584838867, 'energy loss': 0.007541414350271225}
+
+ 28%|████████████████████████████████████████████▌                                                                                                                  | 28/100 [00:03<00:09,  7.92it/s]
+{'net_loss': 0.3832980990409851, 'epoch': 30, 'misclassify loss': 0.24653834104537964, 'energy loss': 0.006837988272309303}
+
+ 45%|███████████████████████████████████████████████████████████████████████▌                                                                                       | 45/100 [00:05<00:06,  8.23it/s]
+
+ 61%|████████████████████████████████████████████████████████████████████████████████████████████████▉                                                              | 61/100 [00:07<00:05,  7.55it/s]
+{'net_loss': 0.15118637681007385, 'epoch': 60, 'misclassify loss': 0.06184762716293335, 'energy loss': 0.004466937854886055}
+
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                   | 78/100 [00:09<00:02,  8.55it/s]
+{'net_loss': 0.12499289214611053, 'epoch': 80, 'misclassify loss': 0.05630695819854736, 'energy loss': 0.0034342966973781586}
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████        | 95/100 [00:11<00:00,  8.07it/s]
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:12<00:00,  8.17it/s]
+3
+{'net_loss': 1.8690359592437744, 'epoch': 0, 'misclassify loss': 1.8690366744995117, 'energy loss': -3.3527612686157227e-08}
+  5%|████████                                                                                                                                                        | 5/100 [00:00<00:11,  7.99it/s]
+
+ 21%|█████████████████████████████████▍                                                                                                                             | 21/100 [00:02<00:09,  8.04it/s]
+{'net_loss': 0.5599561333656311, 'epoch': 20, 'misclassify loss': 0.40775394439697266, 'energy loss': 0.007610108703374863}
+
+ 38%|████████████████████████████████████████████████████████████▍                                                                                                  | 38/100 [00:04<00:07,  7.96it/s]
+ 45%|███████████████████████████████████████████████████████████████████████▌                                                                                       | 45/100 [00:05<00:06,  8.07it/s]
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f8bd2e18f70>
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+    self._shutdown_workers()
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1443, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/multiprocessing/popen_fork.py", line 44, in wait
+    if not wait([self.sentinel], timeout):
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "test.py", line 144, in <module>
+    eval.attack_model()
+  File "/home/machiraj/mufia_git/eval/y_eval.py", line 59, in attack_model
+    return self.process_data(solver)
+  File "/home/machiraj/mufia_git/eval/y_eval.py", line 180, in process_data
+    data_processed, y_quantize = solver(data, target)
+  File "/home/machiraj/mufia_git/attacks/attacks.py", line 60, in __call__
+    y_quantize = self.step_solver(
+  File "/home/machiraj/mufia_git/attacks/attacks.py", line 100, in step_solver
+    new_rgb = get_rgb_func(
+  File "/home/machiraj/mufia_git/attacks/attack_utils.py", line 122, in get_rgb_func
+    cb_idct = custom_batch_idct(cb_dct, block_size=block_size)
+  File "/home/machiraj/mufia_git/attacks/attack_utils.py", line 81, in custom_batch_idct
+    im_blocks = dct_lib.block_idct(dct_blocks)
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchjpeg/dct/__init__.py", line 104, in block_idct
+    n = _normalize(N).to(coeff.device)
+KeyboardInterrupt

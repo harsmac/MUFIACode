@@ -44,13 +44,9 @@ def save_name_generator(param):
         + "_iter_"
         + str(param["n_epochs"])
         + "_reg_"
-        + str(param["lambda_mse"])
+        + str(param["lambda_reg"])
         + "_kappa_"
         + str(param["kappa"])
-        + "_retain_dc_"
-        + str(param["retain_dc"])
-        + "_dc_"
-        + str(param["dc"])
         + ".pt"
     )
 

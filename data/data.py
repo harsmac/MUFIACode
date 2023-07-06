@@ -1,4 +1,3 @@
-# Use machiraj_attks conda environment
 from torchvision import datasets
 import torchvision
 import sys
@@ -18,13 +17,14 @@ sys.path.append("../")
 
 import torch
 from torch.utils.data import Dataset
+import configs
 
 
 class DataLoading:
     def __init__(self, params):
         self.dataset_name = params["dataset"]
         self.batch_size = params["batch_size"]
-        self.shuffle = params["shuffle"]
+        self.shuffle = False  # to keep consistency
 
     def get_data(self):
         if self.dataset_name == "cifar10":
@@ -37,7 +37,7 @@ class DataLoading:
             raise ValueError("Dataset not supported")
 
     def cifar10_loading(self):
-        root_path = "/SCRATCH2/machiraj/datasets/cifar10/"
+        root_path = configs.dataset_paths["cifar10"]
         transform_test = transforms.Compose([transforms.ToTensor(),])
         transform_train = transforms.Compose(
             [
@@ -68,7 +68,7 @@ class DataLoading:
         return trainset, trainloader, testset, testloader
 
     def cifar100_loading(self):
-        root_path = "/SCRATCH2/machiraj/datasets/cifar100/"
+        root_path = configs.dataset_paths["cifar100"]
         transform_test = transforms.Compose([transforms.ToTensor(),])
         transform_train = transforms.Compose(
             [
@@ -110,8 +110,8 @@ class DataLoading:
                 transforms.ToTensor(),
             ]
         )
-        imagenet_path_val = "/datasets2/ImageNet2012/val/"
-        imagenet_path = "/datasets2/ImageNet2012/train/"
+        imagenet_path_val = configs.dataset_paths["imagenet_val"]
+        imagenet_path = configs.dataset_paths["imagenet_train"]
 
         trainset = datasets.ImageFolder(imagenet_path, train_transform,)
         testset = datasets.ImageFolder(imagenet_path_val, test_transform,)

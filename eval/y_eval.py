@@ -51,22 +51,10 @@ class Y_Evaluator:
 
     def attack_model(self):
 
-        if self.params["analyze"]:
-            save_location = self.save_y_quantize_all(
-                None,
-                self.params["dataset"],
-                self.params["save_dir"],
-                self.params["save_name"],
-                save=False,
-            )
-            y_quantize_all = torch.load(save_location)
-            self.process_data_for_analyze(y_quantize_all)
-            return
+        if self.params["atk_type"] == "mufia":
+            solver = FilterAttack(self.model, self.params, device=self.device)
         else:
-            if self.params["atk_type"] == "y_adv":
-                solver = FilterAttack(self.model, self.params, device=self.device)
-            else:
-                raise NotImplementedError
+            raise NotImplementedError
 
         return self.process_data(solver)
 
@@ -186,7 +174,7 @@ class Y_Evaluator:
         y_quantize_all = None
 
         for batch_idx, (data, target) in enumerate(self.params["dataloader"]):
-            print(batch_idx)
+            print("Batch: ", batch_idx, " of ", len(self.params["dataloader"]))
             data, target = data.to(self.device), target.to(self.device)
 
             data_processed, y_quantize = solver(data, target)

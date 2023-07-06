@@ -1,0 +1,10 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Traceback (most recent call last):
+  File "test.py", line 128, in <module>
+    _, _, testset, testloader = data_loading.get_data()
+  File "/home/machiraj/mufia_git/data/data.py", line 29, in get_data
+    return self.cifar10_loading()
+  File "/home/machiraj/mufia_git/data/data.py", line 57, in cifar10_loading
+    testset, batch_size=self.batch_size, shuffle=self.shuffle, num_workers=2
+AttributeError: 'DataLoading' object has no attribute 'shuffle'

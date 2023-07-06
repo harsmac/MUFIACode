@@ -1,4 +1,3 @@
-# Use machiraj_attks conda environment
 import sys
 import os
 import torch
@@ -16,6 +15,7 @@ torch.cuda.empty_cache()
 sys.path.append("../")
 from misc import *  # needed for normalize_net
 from models.cifar10_resnet import ResNet50
+import configs
 
 
 class MadryHelper:
@@ -64,19 +64,19 @@ class ModelLoader:
         if self.dataset == "cifar10" or self.dataset == "cifar10c":
             cifar10_mean = [0.4914, 0.4822, 0.4465]
             cifar10_std = [0.2023, 0.1994, 0.2010]
-            path = "/SCRATCH2/machiraj/robust_models/CIFAR10/"
+            path = configs.dataset_paths["cifar10"]
             return cifar10_mean, cifar10_std, path
 
         elif self.dataset == "cifar100" or self.dataset == "cifar100c":
             cifar100_mean = [0.5071, 0.4867, 0.4408]
             cifar100_std = [0.2675, 0.2565, 0.2761]
-            path = "/SCRATCH2/machiraj/robust_models/CIFAR100/"
+            path = configs.dataset_paths["cifar100"]
             return cifar100_mean, cifar100_std, path
 
         elif self.dataset == "imagenet" or self.dataset == "imagenetc":
             imagenet_mean = [0.485, 0.456, 0.406]
             imagenet_std = [0.229, 0.224, 0.225]
-            path = "/SCRATCH2/machiraj/robust_models/IMAGENET/"
+            path = configs.dataset_paths["imagenet"]
             return imagenet_mean, imagenet_std, path
 
     def normalize_net(self, net):

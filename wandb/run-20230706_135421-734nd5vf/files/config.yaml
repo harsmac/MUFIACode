@@ -1,0 +1,56 @@
+wandb_version: 1
+
+defense:
+  desc: null
+  value:
+    threat_model: std
+    dataset: cifar10
+    batch_size: 32
+    lr: 0.1
+    lambda_reg: 20.0
+    save_mat: false
+    n_epochs: 100
+    print_every: 10
+    atk_type: mufia
+    block_size: 32
+    model_name: resnet56
+    parallel: false
+    verbose: true
+    sim_loss: cosine
+    kappa: 0.99
+    save_name: test_mufia_std_resnet56_iter_100_reg_20.0_kappa_0.99.pt
+    save_dir: /SCRATCH2/machiraj/quantize_mats/
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.10
+    cli_version: 0.15.1
+    framework: huggingface
+    huggingface_version: 4.29.0.dev0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1688651661.980719
+    t:
+      1:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 55
+      - 63
+      2:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 55
+      - 63
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.8.10
+      5: 0.15.1
+      6: 4.29.0.dev0
+      8:
+      - 5

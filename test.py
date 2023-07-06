@@ -20,8 +20,8 @@ from data.data import *
 from models.model_loader import *
 from eval.classic_eval import Evaluator
 from eval.y_eval import Y_Evaluator
+import configs
 
-# Defaults
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda" if use_cuda else "cpu")
 
@@ -51,7 +51,10 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "--lambda_mse", default=10, type=float, help="Regularization for MUFIA attack",
+        "--lambda_reg",
+        default=20.0,
+        type=float,
+        help="Regularization for MUFIA attack",
     )
 
     parser.add_argument(
@@ -76,7 +79,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "--atk_type",
-        choices=["clean", "mufia",],
+        choices=["clean", "mufia"],
         default="mufia",
         help="Evaluation/Attack type",
     )
@@ -111,12 +114,12 @@ if __name__ == "__main__":
     run_name = run_name_generator(param)
     save_name = save_name_generator(param)
     param["save_name"] = save_name
-    param["save_dir"] = "/SCRATCH2/machiraj/quantize_mats/"
+    param["save_dir"] = configs.directory_names["save_dir"]
 
     logger = wandb.init(
-        entity="harshitha-machiraju",
-        project="mufia",
-        reinit=True,
+        entity=configs.wandb_config["entity"],
+        project=configs.wandb_config["project"],
+        reinit=configs.wandb_config["reinit"],
         name=run_name,
         config=config_wandb,
     )
