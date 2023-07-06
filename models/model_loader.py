@@ -64,19 +64,19 @@ class ModelLoader:
         if self.dataset == "cifar10" or self.dataset == "cifar10c":
             cifar10_mean = [0.4914, 0.4822, 0.4465]
             cifar10_std = [0.2023, 0.1994, 0.2010]
-            path = configs.dataset_paths["cifar10"]
+            path = configs.model_paths["cifar10"]
             return cifar10_mean, cifar10_std, path
 
         elif self.dataset == "cifar100" or self.dataset == "cifar100c":
             cifar100_mean = [0.5071, 0.4867, 0.4408]
             cifar100_std = [0.2675, 0.2565, 0.2761]
-            path = configs.dataset_paths["cifar100"]
+            path = configs.model_paths["cifar100"]
             return cifar100_mean, cifar100_std, path
 
         elif self.dataset == "imagenet" or self.dataset == "imagenetc":
             imagenet_mean = [0.485, 0.456, 0.406]
             imagenet_std = [0.229, 0.224, 0.225]
-            path = configs.dataset_paths["imagenet"]
+            path = configs.model_paths["imagenet"]
             return imagenet_mean, imagenet_std, path
 
     def normalize_net(self, net):

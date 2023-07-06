@@ -122,15 +122,8 @@ class FilterAttack:
         if self.verbose and (
             epoch % self.print_every == 0 or epoch == self.n_epochs - 1
         ):
-            # print(f"Attack Iteration {epoch}: Loss: {loss.item()}")
-            print(
-                {
-                    "net_loss": loss.item(),
-                    "epoch": epoch,
-                    "misclassify loss": ce_loss.item(),
-                    "energy loss": energy_loss.item(),
-                }
-            )
+            print("Net Loss: {0:.4f}  |  Epoch: {1:3d}  |   Class. Loss: {2:.4f}  |  Sim. Loss: {2:.4f}".format(loss.item(), epoch, ce_loss.item(), energy_loss.item()))
+            
 
         # detach
         y_quantize.detach_()
