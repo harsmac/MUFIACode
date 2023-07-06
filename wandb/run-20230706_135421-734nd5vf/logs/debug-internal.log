@@ -179,3 +179,98 @@
 2023-07-06 13:57:20,535 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
 2023-07-06 13:57:20,536 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
 2023-07-06 13:57:20,619 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:22,606 DEBUG   SenderThread:5902 [sender.py:send():375] send: stats
+2023-07-06 13:57:22,624 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:23,943 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:57:24,630 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:26,635 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:28,640 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:29,513 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:57:34,569 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:57:34,651 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:35,534 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:57:35,536 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:57:36,658 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:38,661 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:39,687 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:57:40,665 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:42,670 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:44,675 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:44,743 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:57:46,680 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:50,129 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:57:50,536 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:57:50,537 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:57:50,689 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:52,610 DEBUG   SenderThread:5902 [sender.py:send():375] send: stats
+2023-07-06 13:57:52,695 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:54,699 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:55,238 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:57:56,704 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:57:58,708 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:00,359 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:00,712 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:02,716 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:04,720 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:05,899 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:58:05,900 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:05,901 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:58:08,727 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:10,731 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:10,919 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:12,735 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:14,743 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:15,947 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:16,746 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:18,751 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:20,756 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:20,874 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:58:20,876 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:58:21,013 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:22,613 DEBUG   SenderThread:5902 [sender.py:send():375] send: stats
+2023-07-06 13:58:22,761 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:26,290 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:28,772 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:30,778 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:31,359 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:32,783 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:34,789 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:35,875 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:58:35,876 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:58:36,368 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:36,792 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:38,795 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:40,801 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:41,685 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:46,740 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:46,811 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:48,815 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:50,820 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:50,875 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:58:50,877 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:58:51,789 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:52,616 DEBUG   SenderThread:5902 [sender.py:send():375] send: stats
+2023-07-06 13:58:52,825 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:54,830 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:56,797 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:58:56,835 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:58:58,840 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:02,048 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:59:02,848 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:04,853 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:05,875 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:59:05,876 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:59:06,858 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:07,106 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:59:08,863 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:10,869 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:12,181 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:59:12,874 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:14,879 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:16,884 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:18,042 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
+2023-07-06 13:59:20,875 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-06 13:59:20,877 DEBUG   SenderThread:5902 [sender.py:send_request():402] send_request: stop_status
+2023-07-06 13:59:22,619 DEBUG   SenderThread:5902 [sender.py:send():375] send: stats
+2023-07-06 13:59:22,895 INFO    Thread-12 :5902 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/machiraj/mufia_git/wandb/run-20230706_135421-734nd5vf/files/output.log
+2023-07-06 13:59:23,060 DEBUG   HandlerThread:5902 [handler.py:handle_request():144] handle_request: status_report
