@@ -1,0 +1,39 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Loading data from CIFAR10
+Using cache found in /SCRATCH2/machiraj/datasets/cifar10/chenyaofo_pytorch-cifar-models_master
+Model loaded
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchmetrics/utilities/prints.py:36: UserWarning: The `reduction=sum` will not have any effect when `dim` is None.
+  warnings.warn(*args, **kwargs)
+Batch:  0  of  313
+  0%|                                                                                                                                                                          | 0/1 [00:00<?, ?it/s]
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.40s/it]
+Batch:  1  of  313
+{'net_loss': 1.7998656034469604, 'epoch': 0, 'misclassify loss': 1.79986572265625, 'energy loss': -5.587935447692871e-09}
+/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.69it/s]
+Batch:  2  of  313
+{'net_loss': 1.8983227014541626, 'epoch': 0, 'misclassify loss': 1.8983227014541626, 'energy loss': 1.862645149230957e-09}
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.83it/s]
+Traceback (most recent call last):
+  File "test.py", line 147, in <module>
+    eval.attack_model()
+  File "/home/machiraj/mufia_git/scripts/../eval/y_eval.py", line 59, in attack_model
+    return self.process_data(solver)
+  File "/home/machiraj/mufia_git/scripts/../eval/y_eval.py", line 188, in process_data
+    ) = self.calc_metrics(data, data_processed, target)
+  File "/home/machiraj/mufia_git/scripts/../eval/y_eval.py", line 146, in calc_metrics
+    clip_score_curr = self.clip_score(data, data_processed)
+  File "/home/machiraj/mufia_git/scripts/../eval/y_eval.py", line 110, in clip_score
+    clip_model, _ = clip.load("RN50", device=self.device)
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/clip/clip.py", line 120, in load
+    model_path = _download(_MODELS[name], download_root or os.path.expanduser("~/.cache/clip"))
+  File "/opt/anaconda3/envs/machiraj_bird/lib/python3.8/site-packages/clip/clip.py", line 54, in _download
+    if hashlib.sha256(open(download_target, "rb").read()).hexdigest() == expected_sha256:
+KeyboardInterrupt

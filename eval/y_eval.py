@@ -240,8 +240,6 @@ class Y_Evaluator:
                 "y_psnr": y_psnr,
                 "y_clip": y_clip,
                 "y_lpips": y_lpips,
-                "retain_dc": self.params["retain_dc"],
-                "dc_comp": self.params["dc"],
                 "block_size": self.params["block_size"],
             }
         )
