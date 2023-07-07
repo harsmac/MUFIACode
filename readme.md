@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 
 ## Getting started
- - We set the directories for the datasets, models and configs for [wandb](https://wandb.ai/site) in [`configs/defaults.py`](config.py). Please change the directories accordingly.
+ - We set the directories for the datasets, models and configs for [wandb](https://wandb.ai/site) in [`configs/defaults.py`](configs/defaults.py). Please change the directories accordingly.
 
 - We provide a script [`scripts/test.py`](scripts/test.py) with command line arguments to test a variety of models and datasets mentioned in our paper. To simplify the process we also provide a bash script : 
     ```sh
