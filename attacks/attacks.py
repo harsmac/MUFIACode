@@ -12,6 +12,10 @@ from attacks.attack_utils import *
 
 
 class FilterAttack:
+    """
+    Code for Mufia attack using the cosine based misclassification loss mentioned in the paper. 
+    """
+
     def __init__(self, net, params, device="cuda"):
         super(FilterAttack, self).__init__()
         self.print_every = params["print_every"]
@@ -20,7 +24,6 @@ class FilterAttack:
         self.device = device
 
         self.net = net
-        # self.net.eval()
         self.n_epochs = params["n_epochs"]
         self.lr = params["lr"]
         self.block_size = params["block_size"]
@@ -33,7 +36,7 @@ class FilterAttack:
         x, targets = x.to(self.device), targets.to(self.device)
         x = dct_lib.to_ycbcr(x, data_range=1.0)
 
-        # initialize quantization matrices
+        # initialize quantization matrices... we refer to our filter banks as quantization matrices
         y_quantize = (
             torch.ones((batch_size, 1, 1, self.block_size, self.block_size))
             .detach()
@@ -106,16 +109,14 @@ class FilterAttack:
         if isinstance(outputs, tuple):
             outputs = outputs[0]
 
-        # get cosine similarity between outputs and targets
+        # get cosine similarity between outputs and targets and minimize it
         ce_loss = self.misclassify_loss(outputs, targets)
-        # increase the cosine similarity between dct
+        # increase the cosine similarity between dct for semantic similarity
         energy_loss = self.similarity_loss(y_orig_dct, new_y_dct)
 
         loss = ce_loss + self.lambda_reg * energy_loss
 
-        # loss = loss.mean()
         loss.backward()
-
         # update
         optimizer.step()
 
@@ -135,6 +136,11 @@ class FilterAttack:
 
 
 class FilterAttackCE:
+    """
+    Code for Mufia attack using the cross entropy loss mentioned in the supplementary section of the paper. 
+    This version works worse than the cosine loss version. But we provide this for completeness.
+    """
+
     def __init__(self, net, params, device="cuda"):
         super(FilterAttackCE, self).__init__()
         self.print_every = params["print_every"]

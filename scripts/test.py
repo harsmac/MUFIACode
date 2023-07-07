@@ -1,3 +1,7 @@
+"""
+Main file to evaluate the model on the test set and attack the model with MUFIA. Command line arguments are used to customize the attack as shown in run.sh file.
+"""
+
 import wandb
 import sys
 import argparse

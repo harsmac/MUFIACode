@@ -12,6 +12,10 @@ import matplotlib.pyplot as plt
 
 
 class CosMisclassifyLoss:
+    """ 
+    Code for cosine based misclassification loss mentioned in the paper.
+    """
+
     def __init__(self, kappa=0.8):
         super(CosMisclassifyLoss, self).__init__()
         self.kappa = kappa
@@ -31,6 +35,10 @@ class CosMisclassifyLoss:
 
 
 class DCTSimilarityLoss:
+    """
+    Code for cosine based similarity loss mentioned in the paper.
+    """
+
     def __init__(self, loss_type="cosine"):
         super(DCTSimilarityLoss, self).__init__()
         self.loss_type = loss_type

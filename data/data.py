@@ -1,3 +1,7 @@
+"""
+File defining the data loading class for various datasets used in the project.
+"""
+
 from torchvision import datasets
 import torchvision
 import sys

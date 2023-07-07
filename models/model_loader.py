@@ -1,3 +1,7 @@
+"""
+ModelLoader class for loading models from robustbench and other sources.
+"""
+
 import sys
 import os
 import torch

@@ -1,3 +1,7 @@
+"""
+File defining the Evaluator class, which is used to evaluate the model on the clean datasets.
+"""
+
 from torchvision.models import *
 from torchvision.utils import *
 import torch
