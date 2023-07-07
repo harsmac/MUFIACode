@@ -59,6 +59,7 @@ Our code repository is based on the following repositories. Credits to the respe
 * [WandB](https://wandb.ai/site)
 * [Robustness](https://github.com/MadryLab/robustness)
 * [Pretrained CIFAR10/100 models](https://github.com/chenyaofo/pytorch-cifar-models)
+* [CIFAR10/100 Architecture](https://github.com/kuangliu/pytorch-cifar)
 
 ## Citing this work
 
