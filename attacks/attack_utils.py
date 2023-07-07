@@ -66,7 +66,8 @@ def custom_dequantize(dct, mat):
     dequantized = dct_lib.deblockify(dequantized_blocks, (dct.shape[2], dct.shape[3]))
     return dequantized
 
-# Below functions inspired from TorchJPEG library 
+
+# Below functions inspired from TorchJPEG library
 def custom_batch_dct(x, block_size=8):
     size = (x.shape[2], x.shape[3])
     im_blocks = dct_lib.blockify(x, block_size)
