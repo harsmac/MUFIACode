@@ -23,9 +23,10 @@ pip install -r requirements.txt
     cd scripts
     bash run.sh
     ```
+- We also provide a ipython notebook for playing around with the attack and making the visualization easier. [`notebooks/playground.ipynb`](notebooks/playground.ipynb)
 
 
-### Results
+## Results
 
 Upon running the script, the results will be logged to [wandb](https://wandb.ai/site). The results for the models mentioned in the paper are as follows:
 
